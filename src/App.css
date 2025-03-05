@@ -1,0 +1,43 @@
+.codeBox,
+.codeBox-white {
+	display: block;
+	margin: 16px auto;
+	overflow: auto;
+	padding: 16px;
+	width: 100%;
+	text-align: start !important;
+}
+
+.codeBox-white {
+	margin: 16px auto;
+	padding: 16px;
+	/* direction: ltr; */
+	border-radius: 4px;
+	overflow: auto;
+	font-size: 0.95rem;
+	display: block;
+	width: 100%;
+}
+
+.codeBox {
+	background-color: #001e3c;
+	border: 1px solid #132f4c;
+	border-radius: 4px;
+	color: #fff;
+	direction: ltr;
+	font-size: 0.8125rem;
+}
+
+.displayFlex {
+	display: flex;
+	padding: 3px 0;
+}
+.tag {
+	color: #e6db74;
+}
+.attr-name {
+	color: #7bc7e2;
+}
+.attr-value {
+	color: #a6e22e;
+}

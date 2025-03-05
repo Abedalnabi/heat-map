@@ -1,0 +1,29 @@
+.bulletchart-container {
+	display: flex;
+	justify-content: center;
+}
+
+.bulletchart-container .bulletchart {
+	display: flex;
+	flex-direction: column;
+}
+
+.bulletchart-container th,
+.bulletchart-container td {
+	width: 100px;
+	height: 50px;
+	border: 1px solid rgba(71, 67, 67, 0.047);
+	color: #000;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+.bulletchart-container th {
+	background-color: #f3f3f3;
+	font-weight: normal;
+}
+
+.foot-row {
+	border: 1px solid rgba(255, 255, 255, 0.933) !important;
+}

@@ -1,0 +1,43 @@
+.heatmap-container {
+	display: flex;
+	justify-content: center;
+}
+
+.heatmap-container .row {
+	display: flex;
+	flex-direction: row;
+}
+
+.heatmap-container .cell {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20px;
+}
+
+.heatmap-container th,
+.heatmap-container td {
+	width: 100px;
+	height: 50px;
+	border: 1px solid #000;
+	color: #000;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+}
+
+.heatmap-container th {
+	background-color: #f3f3f3;
+	font-weight: normal;
+}
+
+.heatmap-container .x-label,
+.heatmap-container .y-label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 50px;
+}
