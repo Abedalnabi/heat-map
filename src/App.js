@@ -232,39 +232,42 @@ function AppContainer() {
 				</Grid>
 				<Grid item xs="12">
 					<Paper elevation="0" outline="1">
-						<Grid item xs="12">
-							<Typography as="h6" p-2>
-								colorMappingState structure
-							</Typography>
-						</Grid>
-						<Grid item xs="12">
-							<Grid container spacing="3">
-								<Grid item xs="12">
-									<div>
-										<span>colorMappingState</span> <span> {`={`} </span>
-										<br />
-										<Grid ml-5>
-											Java: 'orange',
-											<br />
-											'C#': 'green',
-											<br />
-											JavaScript: 'green',
-											<br />
-											'C++': 'blue',
-											<br />
-											10: 'yellow',
-											<br />
-											15: 'orange',
-											<br />
-											{`	ranges: [`}
+						<Grid container spacing="3">
+							<Grid item xs="12">
+								<Typography as="h6" p-2>
+									colorMappingState structure
+								</Typography>
+							</Grid>
+							<Grid item xs="12">
+								<Grid container spacing="3">
+									<Grid item xs="12">
+										<div>
+											<span>colorMappingState</span> <span> {`={`} </span>
 											<br />
 											<Grid ml-5>
-												{`min: 15, max: 30, color: 'red' `},<br /> {`min: 60, max: 90, color: 'purple'`},
+												Java: 'orange',
+												<br />
+												'C#': 'green',
+												<br />
+												JavaScript: 'green',
+												<br />
+												'C++': 'blue',
+												<br />
+												10: 'yellow',
+												<br />
+												15: 'orange',
+												<br />
+												{`	ranges: [`}
+												<br />
+												<Grid ml-5>
+													{`min: 15, max: 30, color: 'red' `},<br />{' '}
+													{`min: 60, max: 90, color: 'purple'`},
+												</Grid>
+												{`	]`}
 											</Grid>
-											{`	]`}
-										</Grid>
-										{`}`}
-									</div>
+											{`}`}
+										</div>
+									</Grid>
 								</Grid>
 							</Grid>
 						</Grid>
@@ -434,56 +437,60 @@ function AppContainer() {
 						</Grid>
 					</Paper>
 				</Grid>
+
 				<Grid item xs="12">
 					<Paper elevation="0" outline="1">
-						<Typography as="h6" p-2>
-							Pie
-						</Typography>
-						<Typography as="subtitle1" p-2 pb-6>
-							In Pie mode We use this structure that have x(label) and the value in percentage
-						</Typography>
+						<Grid spacing="3">
+							<Typography as="h6" p-2>
+								Pie
+							</Typography>
+							<br />
+							<Typography as="subtitle1" p-2 pb-6>
+								In Pie mode We use this structure that have x(label) and the value in percentage
+							</Typography>
 
-						<Grid item xs="12">
-							<Grid container>
-								<Grid item xs="12">
-									<div>
-										<span>objDataState</span> <span> {`={`} </span>
-										<br />
-										<Grid ml-2>
-											{`data : [`}
-											<Grid ml-5>
-												{`x: 'JavaScript', value: '30%' `},
-												<br />
-												{`x: 'Java', value: '50%' `},
-												<br />
-												{` x: 'C++', value: '20%' `},
-												<br />
+							<div item xs="12">
+								<div style={{ justifySelf: 'flex-start' }} spacing="3">
+									<div style={{ justifySelf: 'flex-start' }} item xs="12">
+										<div>
+											<span>objDataState</span> <span> {`={`} </span>
+											<br />
+											<Grid ml-2>
+												{`data : [`}
+												<Grid ml-5>
+													{`x: 'JavaScript', value: '30%' `},
+													<br />
+													{`x: 'Java', value: '50%' `},
+													<br />
+													{` x: 'C++', value: '20%' `},
+													<br />
+												</Grid>
+												{`]`}
 											</Grid>
-											{`]`}
-										</Grid>
-										{`}`}
+											{`}`}
+										</div>
 									</div>
-								</Grid>
-							</Grid>
-						</Grid>
-						<Charts mode={'pie'} objData={objDataPie} colorMapping={colorMapping} />
-						<Grid container spacing="3">
-							<Grid item xs="12"></Grid>
-							<Grid item xs="12">
-								<Grid container>
-									<Grid item xs="12"></Grid>
+									.
+								</div>
+							</div>
+							<Charts mode={'pie'} objData={objDataPie} colorMapping={colorMapping} />
+							<Grid container spacing="3">
+								<Grid item xs="12"></Grid>
+								<Grid item xs="12">
+									<Grid container>
+										<Grid item xs="12"></Grid>
 
-									<Grid item xs="12">
-										<pre className="codeBox">
-											<code>
-												{'<'}
-												<span className="tag">Charts</span> <br />
-												<span className="attr-name">{`   mode`}</span>=
-												<span className="attr-value">"{`pie`}"</span>
-												<br />
-												<span className="attr-name">{`   objDataState`}</span>=<br />
-												<span className="attr-value">
-													{`{
+										<Grid item xs="12">
+											<pre className="codeBox">
+												<code>
+													{'<'}
+													<span className="tag">Charts</span> <br />
+													<span className="attr-name">{`   mode`}</span>=
+													<span className="attr-value">"{`pie`}"</span>
+													<br />
+													<span className="attr-name">{`   objDataState`}</span>=<br />
+													<span className="attr-value">
+														{`{
 	  data: [
 		{ x: 'JavaScript', value: '30%' },
 		{ x: 'Java', value: '50%' },
@@ -491,10 +498,11 @@ function AppContainer() {
 	],
 }
     `}
-												</span>
-												{'/>'}
-											</code>
-										</pre>
+													</span>
+													{'/>'}
+												</code>
+											</pre>
+										</Grid>
 									</Grid>
 								</Grid>
 							</Grid>
@@ -510,7 +518,7 @@ function AppContainer() {
 							In histogram mode We use this structure that have x(label) and the value
 						</Typography>
 
-						<Grid item xs="12">
+						<div item xs="12">
 							<Grid container>
 								<Grid item xs="12">
 									<div>
@@ -532,7 +540,7 @@ function AppContainer() {
 									</div>
 								</Grid>
 							</Grid>
-						</Grid>
+						</div>
 						<Charts mode={'histogram'} objData={objDataHistogram} colorMapping={colorMapping} />
 						<Grid container spacing="3">
 							<Grid item xs="12"></Grid>
